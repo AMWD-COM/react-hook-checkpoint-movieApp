@@ -1,0 +1,124 @@
+.movieSelected {
+    margin: auto;
+    max-width: 80vw;
+    max-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    .youtube-container {
+        position: absolute;
+        z-index: 90;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .btn-close-trailer {
+        border: 1px solid #fff;
+        outline: none;
+        background: #fc010146;
+        border-radius: 100%;
+        padding: 10px;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        z-index: 100;
+        top: 45%;
+        left: 2%;
+    }
+    .btn-go-home{
+         border: 1px solid #fff;
+        outline: none;
+        background: #01031b46;
+        border-radius: 100%;
+        padding: 5px;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(29, 236, 243);
+        cursor: pointer;
+       position: absolute;
+       right: 10px;
+       bottom: 10px;
+       
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        h1 {
+            font-size: 50px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .btn-play-trailer {
+            border: 1px solid #fff;
+            outline: none;
+            background: #fc0101;
+            border-radius: 10px;
+            padding: 0px 25px;
+            margin-bottom: 15px;
+            height: 50px;
+            min-width: 150px;
+            font-size: 1.8rem;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    h3 {
+        color: $color-2;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    h2 {
+        letter-spacing: 1px;
+        font-size: 2rem;
+        margin-top: -4px;
+
+        span {
+            font-size: 0.7rem;
+        }
+    }
+    ul {
+        margin: 6px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li {
+        background: #49494edc;
+        border-radius: 18px;
+        padding: 0px 7px;
+        margin: 0 4px 4px 0;
+        font-size: 1.5rem;
+        text-align: justify;
+        text &:first-child {
+            margin-left: -4px;
+        }
+    }
+    h3 {
+        letter-spacing: 1px;
+        font-size: 1.6rem;
+        margin-top: 10px;
+    }
+    p {
+        color: $color-2;
+        font-size: 1.6rem;
+        line-height: 20px;
+        height: 160px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
